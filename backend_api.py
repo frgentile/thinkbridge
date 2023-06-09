@@ -7,7 +7,11 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
+@app.get("/")
+async def hello():
+    return "It works!"
+
 @app.get("/scrape")
-async def hello(site_url: str):
+async def scrape(site_url: str):
     document = await aio_scrape_site(site_url)
     return document
