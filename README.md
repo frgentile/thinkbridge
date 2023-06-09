@@ -66,4 +66,11 @@ The output format for each row of the csv file is:
 
 # Running
 
-Run script `setup.bash` to setup the virtual env.
+Follow the next steps on a Linux machine (preferably ubuntu):
+
+1. Run script `setup.bash` to setup the virtual env.
+2. Run `source venv/bin/activate`.
+3. Run `uvicorn backend_api:app --reload &` to activate API backend.
+4. *Optional*: you can test api is working in `http://localhost:8000`.
+5. Play with `frontend_cli.py`. Example: `python3 frontend_cli.py g2crowd.csv`.
+6. *Optional*: you can kill API backend with `killall uvicorn` 
