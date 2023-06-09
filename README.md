@@ -1,5 +1,4 @@
-# Thinkbridge Challenge
-
+# Thinkbridge
 Was created a Python module called `scrape_sites` with 
 a unique file and a function `scrape` to get information 
 from a site url passed as a parameter.
