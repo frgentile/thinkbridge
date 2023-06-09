@@ -36,3 +36,34 @@ if everything was fine accessing with a web browser
 to `http://localhost:8000/ ` and see `"It works!"`
 on the page.
 
+# Front-End
+
+The front-end is very single Command Line Interface (CLI). It's the
+file named `frontend_cli.py`. You must pass as required parameter the
+path to the csv file containing the g2crowd info.
+
+The output is saved in JSON format in a file. By default this file is 
+is `scraped_sites.json` that can be overriden with `--output` or `-o`
+optional arg.
+
+The output format for each row of the csv file is:
+
+```json
+{
+  "Company": {
+    "tag_element1": {
+      "attributes": { ... }, 
+      "value": "..."
+    },
+    "tag_element2": {
+      "attributes": { ... }, 
+      "value": "..."
+    }, 
+    ...
+  }
+}
+```
+
+# Running
+
+Run script `setup.bash` to setup the virtual env.
